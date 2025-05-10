@@ -11,6 +11,7 @@ const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [isSponsorDropdownOpen, setSponsorDropdownOpen] = useState(false);
   const location = useLocation();
 
   const toggleMobileMenu = () => {
@@ -39,19 +40,26 @@ const Navbar = () => {
     closeMobileMenu();
   }, [location]);
 
+  // Sponsor dropdown handlers
+  const handleSponsorClick = (e) => {
+    e.preventDefault();
+    setSponsorDropdownOpen((prev) => !prev);
+  };
+
   return (
     <nav
       className={`bg-white shadow-md fixed w-full z-10 top-0 transition-all duration-300 ${
         isVisible ? "opacity-100" : "opacity-0 -translate-y-full"
       }`}
+      style={{ minHeight: '72px' }} // Ensures minimum height for navbar
     >
-      <div className="container mx-auto px-4 py-2 flex items-center justify-between">
-        <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-16 mr-1" />
-          <h1 className="text-xl font-bold flex items-center">
+      <div className="container mx-auto px-2 md:px-4 py-2 flex flex-wrap items-center justify-between min-h-[72px]">
+        <div className="flex items-center min-w-[220px]">
+          <img src={logo} alt="Logo" className="h-12 md:h-16 mr-1" />
+          <h1 className="text-lg md:text-xl font-bold flex items-center whitespace-nowrap">
             DD Robocon 2025
-            <img src={DDRLogo} alt="DDRLogo" className="h-12 ml-3" />
-            <img src={logo2} alt="Logo2" className="h-12 ml-3 mb-4" />
+            <img src={DDRLogo} alt="DDRLogo" className="h-10 md:h-12 ml-2 md:ml-3" />
+            <img src={logo2} alt="Logo2" className="h-10 md:h-12 ml-2 md:ml-3 mb-2 md:mb-4" />
           </h1>
         </div>
         <div className="flex items-center md:hidden">
@@ -64,8 +72,8 @@ const Navbar = () => {
           </button>
         </div>
         {/* Desktop Navigation and Social Icons */}
-        <div className="hidden md:flex items-center space-x-4">
-          <ul className="flex space-x-4 text-gray-900">
+        <div className="hidden md:flex items-center space-x-4 flex-1 justify-end min-w-0">
+          <ul className="flex flex-wrap space-x-2 md:space-x-4 text-gray-900 items-center">
             <li><Link to="/" className="nav">Home</Link></li>
             
             <li><Link to="/contest-rules" className="nav">Contest Rules</Link></li>
@@ -74,10 +82,33 @@ const Navbar = () => {
             <li><Link to="/stage2" className="nav">Stage-2</Link></li>
             <li><Link to="/mathworks" className="nav">MathWorks</Link></li>
             <li><Link to="/contact" className="nav">Contact</Link></li>
-           
-            
+            <li className="relative">
+              <span
+                className="nav cursor-pointer select-none"
+                onClick={handleSponsorClick}
+                tabIndex={0}
+                onKeyDown={e => { if (e.key === 'Enter') handleSponsorClick(e); }}
+                aria-haspopup="true"
+                aria-expanded={isSponsorDropdownOpen}
+              >
+                Sponsor ▾
+              </span>
+              <ul
+                className={`absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg transition-opacity duration-200 z-20 ${
+                  isSponsorDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+                }`}
+                onClick={() => setSponsorDropdownOpen(false)}
+              >
+                <li>
+                  <Link to="/sponsorship" className="block px-4 py-2 hover:bg-gray-100">Sponsorship</Link>
+                </li>
+                <li>
+                  <Link to="/mathworks" className="block px-4 py-2 hover:bg-gray-100">MathWorks</Link>
+                </li>
+              </ul>
+            </li>
           </ul>
-          <div className="flex space-x-4 ml-4">
+          <div className="flex space-x-2 md:space-x-4 ml-2 md:ml-4">
             <a href="https://youtube.com/@ddnationalrobocon2441?si=v63ugCnYiJLEG3dK" target="_blank" rel="noopener noreferrer">
               <FaYoutube className="w-6 h-6" />
             </a>
@@ -96,7 +127,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center z-20">
-          <ul className="bg-white bg-opacity-90 w-3/4 rounded-lg shadow-lg text-center space-y-4 py-8">
+          <ul className="bg-white bg-opacity-90 w-11/12 max-w-md rounded-lg shadow-lg text-center space-y-4 py-8">
             <li><Link to="/" className="nav" onClick={closeMobileMenu}>Home</Link></li>
             <li>
               <Link to="/important-dates" className="nav" onClick={closeMobileMenu}>Important Dates</Link>
@@ -119,8 +150,28 @@ const Navbar = () => {
             <li>
               <Link to="/contact" className="nav" onClick={closeMobileMenu}>Contact</Link>
             </li>
-            
-           
+            <li>
+              <span
+                className="nav cursor-pointer select-none flex items-center justify-center"
+                onClick={handleSponsorClick}
+                tabIndex={0}
+                onKeyDown={e => { if (e.key === 'Enter') handleSponsorClick(e); }}
+                aria-haspopup="true"
+                aria-expanded={isSponsorDropdownOpen}
+              >
+                Sponsor ▾
+              </span>
+              {isSponsorDropdownOpen && (
+                <ul className="ml-4 bg-white bg-opacity-90 rounded shadow-lg text-left space-y-2 py-2">
+                  <li>
+                    <Link to="/sponsorship" className="block px-4 py-2 hover:bg-gray-100" onClick={closeMobileMenu}>Sponsorship</Link>
+                  </li>
+                  <li>
+                    <Link to="/mathworks" className="block px-4 py-2 hover:bg-gray-100" onClick={closeMobileMenu}>MathWorks</Link>
+                  </li>
+                </ul>
+              )}
+            </li>
           </ul>
           <div className="flex space-x-4 mt-4">
             <a href="https://youtube.com/@ddnationalrobocon2441?si=v63ugCnYiJLEG3dK" target="_blank" rel="noopener noreferrer">

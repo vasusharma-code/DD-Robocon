@@ -10,7 +10,7 @@ import ContactUsPage from "./pages/ContactUsPage";
 import Stage1 from "./pages/Stage1";
 import MathWorksModelingAward from "./pages/MathWorksModelingAward";
 import Stage2 from "./pages/Stage2";
-
+import Sponsorship from "./pages/Sponsorship";
 
 
 
@@ -28,6 +28,7 @@ function App() {
       <Route path="/stage1" element={<Stage1/>}/>
       <Route path="/mathworks" element={<MathWorksModelingAward/>}/>
       <Route path="/stage2" element={<Stage2/>}/>
+      <Route path="/sponsorship" element={<Sponsorship/>}/>
     </Routes>
     <Footer/>
    </div>

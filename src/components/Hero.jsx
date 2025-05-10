@@ -121,10 +121,12 @@ const Hero = () => {
       </div>
 
       {/* New Alert Box for Stage-2 Guidelines */}
-      <a href="/stage2">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSewKLwqedL401XJ7c7FER9jZYNMvhYz0jns-GbxPn-sppp2-Q/viewform"
+      target="_blank"
+      rel="noopener noreferrer">
         <div className="md:mr-12 bg-green-500 text-white text-center py-3 px-6 rounded-lg shadow-lg mb-6 transition-transform hover:scale-105 hover:shadow-2xl max-w-lg mx-auto cursor-pointer">
           <span className="text-lg font-bold">
-            📢 Stage-2 Guidelines are out now!
+            📢 Stage-2 Google Form!
           </span>
         </div>
       </a>
