@@ -19,9 +19,9 @@ const MathWorksModelingAward = () => {
       <section className="mb-6">
         <p><strong>Event Name:</strong> DD Robocon India 2025: MathWorks Modeling Award</p>
         <p>
-          <strong>MathWorks Point of Contact:</strong> Roshan Hingnekar (
-          <a className="text-blue-600 underline" href="mailto:rhingnek@mathworks.com">
-            rhingnek@mathworks.com
+          <strong>MathWorks Point of Contact:</strong> Veer Alakshendra (
+          <a className="text-blue-600 underline" href="mailto:valakshe@mathworks.com">
+            valakshe@mathworks.com
           </a>
           )
         </p>
@@ -307,6 +307,7 @@ const MathWorksModelingAward = () => {
         <h2 className="text-2xl font-semibold mb-2">E. Submission</h2>
         <ul className="list-disc ml-6">
           Fill out the following Microsoft Form to submit the report:
+          <br/>
           <a className='text-blue-600' href="https://forms.office.com/pages/responsepage.aspx?id=ETrdmUhDaESb3eUHKx3B5hScu9gB4kBBvad9kc6TGhVUOFNXSDJMQ09HMDFNWkJVQU45UElWUlVRSi4u&route=shorturl" target="_blank" rel="noopener noreferrer">
             Report Submission for DD Robocon India 2025 - MathWorks Modeling Award
           </a>
@@ -362,6 +363,7 @@ const MathWorksModelingAward = () => {
         <h2 className="text-2xl font-semibold mb-2">G. Reference Document</h2>
         <p className="mb-2">
           Please refer to the document for detailed information:
+          <br/>
           <a
             href="https://docs.google.com/document/d/1Ly1P1mnf3XneE5MarhoBPle8bmVWofoo/edit?usp=sharing&ouid=104037063664267952590&rtpof=true&sd=true"
             target="_blank"

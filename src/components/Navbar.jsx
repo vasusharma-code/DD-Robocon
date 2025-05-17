@@ -80,7 +80,7 @@ const Navbar = () => {
             <li><Link to="/game-videos" className="nav">Game Videos</Link></li>
             <li><Link to="/stage1" className="nav">Stage-1</Link></li>
             <li><Link to="/stage2" className="nav">Stage-2</Link></li>
-            <li><Link to="/mathworks" className="nav">MathWorks</Link></li>
+            
             <li><Link to="/contact" className="nav">Contact</Link></li>
             <li className="relative">
               <span
@@ -144,9 +144,7 @@ const Navbar = () => {
             <li>
               <Link to="/stage2" className="nav" onClick={closeMobileMenu}>Stage-2</Link>
             </li>
-            <li>
-              <Link to="/mathworks" className="nav" onClick={closeMobileMenu}>MathWorks</Link>
-            </li>
+          
             <li>
               <Link to="/contact" className="nav" onClick={closeMobileMenu}>Contact</Link>
             </li>

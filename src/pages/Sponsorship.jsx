@@ -1,4 +1,8 @@
 import React from "react";
+import mathworksLogo from "../assets/MathLogo.png";
+import probusLogo from "../assets/ProbusLogo.png";
+import fsmLogo from "../assets/FSMLogo.png";
+import ihfcLogo from "../assets/IHFCLogo.png";
 
 const Sponsorship = () => (
   <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 py-10 px-4 md:px-0 m-2 mt-14">
@@ -7,7 +11,51 @@ const Sponsorship = () => (
     {/* About Knowledge Partners */}
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-purple-700 mb-3 uppercase tracking-wide">About Knowledge Partners</h2>
-      <p className="text-gray-700 leading-relaxed mb-2 font-medium">The I-Hub Foundation for Cobotics (IHFC) is the TIH of IIT Delhi in partnership with the Department of Science and Technology (DST), Government of India, under the National Mission on Interdisciplinary Cyber Physical Systems. Founded in June 2020 as a section 8 company, IHFC focuses on R&D, entrepreneurship, skills training, and international collaborations in the areas of Medical, Agriculture, Industry, and Defence. It combines expertise from academia, government, and industry to drive innovation. IHFC supports and nurtures young minds in the fields of deeptech, AI, and robotics.</p>
+      <div className="flex flex-col md:flex-row gap-8 mb-6">
+        {/* IHFC Section */}
+        <div className="flex flex-row items-center bg-white rounded-lg shadow p-4 flex-1">
+          <img
+            src={ihfcLogo}
+            alt="IHFC"
+            className="object-contain h-20 w-32 mr-4"
+            style={{ minWidth: "80px" }}
+          />
+          <p className="text-gray-700 leading-relaxed font-medium">
+            The I-Hub Foundation for Cobotics (IHFC) is the TIH
+            of IIT Delhi in partnership with the Department of
+            Science and Technology (DST), Government of India,
+            under the National Mission on Interdisciplinary
+            Cyber Physical Systems. Founded in June 2020 as a
+            section 8 company, IHFC focuses on R&amp;D,
+            entrepreneurship, skills training, and international
+            collaborations in the areas of Medical, Agriculture,
+            Industry, and Defence. It combines expertise from
+            academia, government, and industry to drive
+            innovation. IHFC supports and nurtures young
+            minds in the fields of deeptech, AI, and robotics.
+          </p>
+        </div>
+        {/* FSM Section */}
+        <div className="flex flex-row items-center bg-white rounded-lg shadow p-4 flex-1">
+          <img
+            src={fsmLogo}
+            alt="FSM"
+            className="object-contain h-20 w-32 mr-4"
+            style={{ minWidth: "80px" }}
+          />
+          <p className="text-gray-700 leading-relaxed font-medium">
+            Indian Institute of Technology Delhi (IITD) and
+            Automation Industry Association (AIA) partnered in
+            May 2017 to establish a center under the auspices of
+            the Samarth Udyog initiative—a project of the
+            Ministry of Heavy Industries (MHI). The center,
+            known as the Foundation for Smart Manufacturing
+            (FSM), supports the development of technologies
+            for the effective adoption and implementation of
+            smart manufacturing concepts.
+          </p>
+        </div>
+      </div>
     </section>
     {/* Welcome Section */}
     <section className="mb-10">
@@ -45,9 +93,12 @@ const Sponsorship = () => (
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-pink-600 mb-3 uppercase tracking-wide">Important Links</h2>
       <div className="flex flex-wrap gap-4 mb-2">
-        <a href="#" className="bg-blue-100 text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-200 font-semibold transition">DD Robocon 2024 Finals</a>
-        <a href="#" className="bg-blue-100 text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-200 font-semibold transition">DD Robocon Newsletter 2024</a>
-        <a href="#" className="bg-blue-100 text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-200 font-semibold transition">DD Robocon Theme 2025</a>
+        <a href="https://www.youtube.com/live/uhDXriSTr1E?si=DQToUbM5FRjatByp" target="_blank"
+      rel="noopener noreferrer" className="bg-blue-100 text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-200 font-semibold transition">DD Robocon 2024 Finals</a>
+        <a href="https://drive.google.com/file/d/1WY__m4tqx0t2zNBMoeLxKJmbHbSMy4M5/view?usp=drive_link" target="_blank"
+      rel="noopener noreferrer" className="bg-blue-100 text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-200 font-semibold transition">DD Robocon Newsletter 2024</a>
+        <a href="https://youtu.be/FTopsDAp2-o?si=5ihIDFDSO2JCMUIK " target="_blank"
+      rel="noopener noreferrer" className="bg-blue-100 text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-200 font-semibold transition">DD Robocon Theme 2025</a>
       </div>
     </section>
     {/* Sponsorship Matrix */}
@@ -92,11 +143,42 @@ const Sponsorship = () => (
     {/* Sponsors */}
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-green-600 mb-3 uppercase tracking-wide">DD-Robocon 2025 Sponsors</h2>
-      <div className="flex flex-wrap gap-6 items-center justify-center mb-4">
-        <span className="bg-gray-100 px-4 py-2 rounded shadow font-semibold">MathWorks</span>
-        <span className="bg-gray-100 px-4 py-2 rounded shadow font-semibold">Probus</span>
-        <span className="bg-gray-100 px-4 py-2 rounded shadow font-semibold">FSM</span>
-        <span className="bg-gray-100 px-4 py-2 rounded shadow font-semibold">IHFC</span>
+      <div
+        className="flex flex-row gap-10 space-x-10 items-center justify-center mb-4 overflow-x-auto"
+        style={{ minHeight: "120px", whiteSpace: "nowrap" }}
+      >
+        <div className="flex items-center justify-center bg-white rounded shadow p-2">
+          <img
+            src={mathworksLogo}
+            alt="MathWorks"
+            className="object-contain"
+            style={{ height: "80px", width: "180px", display: "block" }}
+          />
+        </div>
+        <div className="flex items-center justify-center bg-white rounded shadow p-2">
+          <img
+            src={probusLogo}
+            alt="Probus"
+            className="object-contain"
+            style={{ height: "80px", width: "180px", display: "block" }}
+          />
+        </div>
+        <div className="flex items-center justify-center bg-white rounded shadow p-2">
+          <img
+            src={fsmLogo}
+            alt="FSM"
+            className="object-contain"
+            style={{ height: "80px", width: "180px", display: "block" }}
+          />
+        </div>
+        <div className="flex items-center justify-center bg-white rounded shadow p-2">
+          <img
+            src={ihfcLogo}
+            alt="IHFC"
+            className="object-contain"
+            style={{ height: "80px", width: "180px", display: "block" }}
+          />
+        </div>
       </div>
     </section>
     {/* Contact Us */}
