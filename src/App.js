@@ -11,6 +11,7 @@ import Stage1 from "./pages/Stage1";
 import MathWorksModelingAward from "./pages/MathWorksModelingAward";
 import Stage2 from "./pages/Stage2";
 import Sponsorship from "./pages/Sponsorship";
+import Stage3 from "./pages/Stage3";
 
 
 
@@ -29,6 +30,8 @@ function App() {
       <Route path="/mathworks" element={<MathWorksModelingAward/>}/>
       <Route path="/stage2" element={<Stage2/>}/>
       <Route path="/sponsorship" element={<Sponsorship/>}/>
+      <Route path="/final" element={<Stage3/>}/>
+      
     </Routes>
     <Footer/>
    </div>

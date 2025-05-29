@@ -111,15 +111,15 @@ const Stage2Guidelines = () => {
       </section>
 
       <section>
-z        <h2 className="text-4xl  text-blue-700 mb-6 text-center">Stage 2 Google Form</h2>
+        
         <div className="flex justify-center">
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSewKLwqedL401XJ7c7FER9jZYNMvhYz0jns-GbxPn-sppp2-Q/viewform?usp=sharing"
+            href="https://drive.google.com/file/d/1hQlK2cM1NxtTTscVtoNggKhk3ETadPbq/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-700 text-white text-2xl  py-4 px-10 rounded-lg shadow-lg transition-transform transform hover:scale-105 text-center"
           >
-            Fill Stage 2 Submission Form
+            Stage 2 Result Out Now
           </a>
         </div>
       </section>

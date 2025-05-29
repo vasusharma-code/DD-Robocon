@@ -308,7 +308,7 @@ const MathWorksModelingAward = () => {
         <ul className="list-disc ml-6">
           Fill out the following Microsoft Form to submit the report:
           <br/>
-          <a className='text-blue-600' href="https://forms.office.com/pages/responsepage.aspx?id=ETrdmUhDaESb3eUHKx3B5hScu9gB4kBBvad9kc6TGhVUOFNXSDJMQ09HMDFNWkJVQU45UElWUlVRSi4u&route=shorturl" target="_blank" rel="noopener noreferrer">
+          <a className='text-blue-600' href=" https://forms.office.com/r/7Jq0VSNuLd" target="_blank" rel="noopener noreferrer">
             Report Submission for DD Robocon India 2025 - MathWorks Modeling Award
           </a>
           <li>
