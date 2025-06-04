@@ -37,8 +37,8 @@ const MathWorksModelingAward = () => {
           and formal presentation. Refer to Section B for more details.
         </p>
         <p className='mt-3'>
-          The <strong>1st, 2nd, and 3rd</strong> place teams will each receive <strong>Cash Prizes</strong> of
-          <strong>35000 INR, 20000 INR, and 15000 INR</strong>, respectively. These awards will be presented at
+          The <strong>1st, 2nd, and 3rd</strong> place teams will each receive <strong>Cash Prizes</strong> of 
+           <strong> 35000 INR, 20000 INR and 15000 INR</strong>, respectively. These awards will be presented at
           the DD Robocon 2025 award ceremony.
         </p>
 
@@ -61,7 +61,7 @@ const MathWorksModelingAward = () => {
             <ul className="list-disc ml-6 mt-2">
               <li>
                 The teams will need to submit their slides in PDF format to the organizers by
-                <strong>June 6, 2025, 11:30 p.m. IST</strong>. Only one entry may be submitted by each team. The
+                <strong> June 22, 2025, 11:30 p.m. IST</strong>. Only one entry may be submitted by each team. The
                 details of submission are provided in Section <strong>E.</strong>
               </li>
               <li>
@@ -70,7 +70,7 @@ const MathWorksModelingAward = () => {
               </li>
               <li>Create original slides as per the format mentioned in Section <strong>D.</strong></li>
               <li>Up to <strong>ten teams</strong> will be selected to participate in Phase 2 of the Competition.</li>
-              <li>The result for Phase 1 will be announced on <strong>June 12, 2025.</strong></li>
+              <li>The result for Phase 1 will be announced on <strong>June 24, 2025.</strong></li>
               <li>
                 <strong>A team must be shortlisted for Stage -2 for main DD Robocon India 2025 competition to be
                   eligible for Phase 2 of the MathWorks Modeling Award.</strong>
@@ -308,14 +308,14 @@ const MathWorksModelingAward = () => {
         <ul className="list-disc ml-6">
           Fill out the following Microsoft Form to submit the report:
           <br/>
-          <a className='text-blue-600' href=" https://forms.office.com/r/7Jq0VSNuLd" target="_blank" rel="noopener noreferrer">
+          <a className='text-blue-600' href="https://forms.office.com/pages/responsepage.aspx?id=ETrdmUhDaESb3eUHKx3B5kykBjkQSVRPkHxdE3KJ3QRUQ1hKMlhTQzNGTDNKMkJRT0I2NUE3RkY0VC4u&route=shorturl" target="_blank" rel="noopener noreferrer">
             Report Submission for DD Robocon India 2025 - MathWorks Modeling Award
           </a>
           <li>
             Please name your file in the following manner: TeamName_MathWorks_2025_V#. <em>For example:</em> TeamRobotSquad_MathWorks_2025_V1
           </li>
           <li>To avoid download errors, please submit the file as a '.pdf'.</li>
-          <li>The deadline for submission is June 6, 2025, 11:30 p.m. IST.</li>
+          <li>The deadline for submission is <strong>June 22, 2025, 11:30 p.m.</strong></li>
         </ul>
       </section>
 

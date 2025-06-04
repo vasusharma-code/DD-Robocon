@@ -90,7 +90,7 @@ const Sponsorship = () => (
       </ul>
     </section>
     {/* Important Links */}
-    <section className="mb-10">
+    {/* <section className="mb-10">
       <h2 className="text-2xl font-bold text-pink-600 mb-3 uppercase tracking-wide">Important Links</h2>
       <div className="flex flex-wrap gap-4 mb-2">
         <a href="https://www.youtube.com/live/uhDXriSTr1E?si=DQToUbM5FRjatByp" target="_blank"
@@ -100,7 +100,7 @@ const Sponsorship = () => (
         <a href="https://youtu.be/FTopsDAp2-o?si=5ihIDFDSO2JCMUIK " target="_blank"
       rel="noopener noreferrer" className="bg-blue-100 text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-200 font-semibold transition">DD Robocon Theme 2025</a>
       </div>
-    </section>
+    </section> */}
     {/* Sponsorship Matrix */}
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-purple-600 mb-3 uppercase tracking-wide">Sponsorship Matrix 2025</h2>

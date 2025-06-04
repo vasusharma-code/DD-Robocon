@@ -103,6 +103,21 @@ const Stage3 = () => (
     <div className="text-center mt-8">
       <span className="text-2xl font-bold text-green-700">ALL THE BEST!</span>
     </div>
+
+    <div className="mt-16 p-6 bg-white rounded-lg shadow max-w-9xl ">
+      <h2 className="text-2xl font-bold text-red-600 mb-4">Non-Competitive Presentation</h2>
+      <p className="text-gray-800 mb-2">
+        Teams interested in the non-competitive category of DD Robocon 2025 are requested to fill out the google form. Please ensure submission by <span className="font-bold">June 10, 2025</span>.
+      </p>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc2q3E9t3NCC-__WfCOaQ41vvGCNv-MRrp-nqz9Q5pcYpeblg/viewform?usp=sharing&ouid=104266911694900133464 "
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition"
+      >
+        Google form link
+      </a>
+    </div>
   </div>
 );
 
