@@ -126,7 +126,7 @@ const Stage3 = () => (
 
      <div className="p-8 mt-14 bg-gray-50">
     <h1 className="text-3xl font-bold text-red-600 text-left mb-8">
-      Registration for NATIONAL DD-ROBOCON 2025 on July 12-13, 2025
+      Registration Links
     </h1>
     <a
         href="https://docs.google.com/forms/d/e/1FAIpQLScUyHxo9yQqHMrSq1Ec3lbleQXsFuhOd4AKJSPPC-3wZ7yd8A/viewform?usp=pp_url"
