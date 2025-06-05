@@ -121,12 +121,10 @@ const Hero = () => {
       </div>
 
       {/* New Alert Box for Stage-2 Guidelines */}
-      <a href="https://drive.google.com/file/d/1hQlK2cM1NxtTTscVtoNggKhk3ETadPbq/view?usp=sharing"
-      target="_blank"
-      rel="noopener noreferrer">
+      <a href="/final">
         <div className="md:mr-12 bg-green-500 text-white text-center py-3 px-6 rounded-lg shadow-lg mb-6 transition-transform hover:scale-105 hover:shadow-2xl max-w-lg mx-auto cursor-pointer">
           <span className="text-lg font-bold">
-            📢 Stage-2 Result Out Now!
+            📢 Register for Final Stage!
           </span>
         </div>
       </a>

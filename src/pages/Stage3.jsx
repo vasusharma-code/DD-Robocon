@@ -13,7 +13,9 @@ const Stage3 = () => (
     <h2 className="text-2xl font-bold text-purple-700 mb-4 mt-8 uppercase tracking-wide">Section-A</h2>
     <ol className="list-decimal ml-6 text-gray-800 mb-8 space-y-6">
       <li>
-        <span className="font-semibold text-blue-700">Team Registration</span>
+        <span className="font-semibold text-blue-700">Team Registration  <a href="https://docs.google.com/forms/d/e/1FAIpQLScUyHxo9yQqHMrSq1Ec3lbleQXsFuhOd4AKJSPPC-3wZ7yd8A/viewform" className="text-green-600 underline" target="_blank"
+          rel="noopener noreferrer">(Participation Form Link)</a></span>
+
         <ul className="list-disc ml-6 mt-1 mb-2">
           <li>
             <span className="font-bold">Mandatory:</span> All qualified teams must fill the Participation Form after payment of non-refundable registration fee
@@ -90,13 +92,16 @@ const Stage3 = () => (
     <h2 className="text-2xl font-bold text-purple-700 mb-4 mt-8 uppercase tracking-wide">Section-B</h2>
     <ol className="list-decimal ml-6 text-gray-800 mb-8 space-y-6">
       <li>
-        Form to upload Permission Letter from your Institute to participate is to be filled in and submitted by <span className="font-bold">June 17, 2025 (11:59 PM)</span> for successful physical participation during July 12-13, 2025. {/*<a href="#" className="text-blue-600 underline font-semibold">[Google form (Click here)]</a>.*/}
+        Form to upload Permission Letter from your Institute to participate is to be filled in and submitted by <span className="font-bold">June 17, 2025 (11:59 PM)</span> for successful physical participation during July 12-13, 2025. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdALHhri-WuO9A592mGyMjoJc90O7p_TtePPcKxehsPuZbrew/viewform" className="text-green-600 underline font-semibold" target="_blank"
+          rel="noopener noreferrer">[Google form (Click here)]</a>
       </li>
       <li>
-        The Permission Letter is to be obtained from the Director/Principal/HOD with their signature in original with seal (<a href="#" className="text-blue-600 underline font-semibold">click here for the format</a>).
+        The Permission Letter is to be obtained from the Director/Principal/HOD with their signature in original with seal (<a href="https://docs.google.com/document/d/16lshoKMOYSNHwMM0WldsMCdfes0cHSrA/edit?tab=t.0" className="text-green-600 underline font-semibold" target="_blank"
+          rel="noopener noreferrer">click here for the format</a>).
       </li>
       <li>
-        Each qualifying team MUST also fill up their travel plan by filling up another form for their pick-up and drop from nearby stations only (New Delhi, Old Delhi and Hazrat Nizamuddin). Google Form (travel plan) is to be filled and submitted by <span className="font-bold">June 17, 2025 (11:59 PM)</span>
+        Each qualifying team MUST also fill up their travel plan by filling up another form for their pick-up and drop from nearby stations only (New Delhi, Old Delhi and Hazrat Nizamuddin). <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpn2kq1jZEZ9mlZkERDa2hb_Lj581TgoDSP1xM9s-VtpLSww/viewform?usp=pp_url " className="text-green-600 text-xl underline" target="_blank"
+          rel="noopener noreferrer"> Google Form </a> (travel plan) is to be filled and submitted by <span className="font-bold">June 17, 2025 (11:59 PM)</span>
       </li>
     </ol>
 
@@ -117,6 +122,57 @@ const Stage3 = () => (
       >
         Google form link
       </a>
+    </div>
+
+     <div className="p-8 mt-14 bg-gray-50">
+    <h1 className="text-3xl font-bold text-red-600 text-left mb-8">
+      Registration for NATIONAL DD-ROBOCON 2025 on July 12-13, 2025
+    </h1>
+    <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScUyHxo9yQqHMrSq1Ec3lbleQXsFuhOd4AKJSPPC-3wZ7yd8A/viewform?usp=pp_url"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition"
+      >
+       1. Participation Form
+      </a>
+      <br/>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdALHhri-WuO9A592mGyMjoJc90O7p_TtePPcKxehsPuZbrew/viewform?usp=pp_url"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition"
+      >
+       2. National DD-Robocon 2025 (Google form to upload Institute Letter and Team Instruction Video)
+      </a>
+      <br/>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdpn2kq1jZEZ9mlZkERDa2hb_Lj581TgoDSP1xM9s-VtpLSww/viewform?usp=pp_url"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition"
+      >
+       3. Travel Form
+      </a>
+      <br/>
+      <a
+        href="https://docs.google.com/document/d/16lshoKMOYSNHwMM0WldsMCdfes0cHSrA/edit?usp=sharing&ouid=104266911694900133464&rtpof=true&sd=true"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition"
+      >
+       4. Format of Institute Letter
+      </a>
+      <br/>
+      <a
+        href="https://drive.google.com/file/d/1hq_dpjN8km60ei2w0a4_udpnWYUM8xoO/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition"
+      >
+       5. Format of Fee Receipt
+      </a>
+
     </div>
   </div>
 );
