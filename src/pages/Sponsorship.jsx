@@ -128,7 +128,7 @@ const Sponsorship = () => (
               ["People allowed as a Sponsor in the Event", "Yes", "Yes", "Yes", "No", "Yes"],
               ["Speaking Slot at Inauguration Ceremony", "Yes", "Yes", "No", "No", "No"],
               ["Social Media Promotions Weekly", "Yes", "Yes", "Yes", "No", "No"],
-              ["Sponsorship Amount (in Lakh Rs.)", "10.0", "5.0", "3.0", "2.0", "1.0"]
+              // ["Sponsorship Amount (in Lakh Rs.)", "10.0", "5.0", "3.0", "2.0", "1.0"]
             ].map((row, idx) => (
               <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                 {row.map((cell, i) => (
