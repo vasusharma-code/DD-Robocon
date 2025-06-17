@@ -68,7 +68,7 @@ const Sponsorship = () => (
       <h3 className="text-xl font-bold text-blue-600 mb-2 uppercase tracking-wide">Event Details</h3>
       <ul className="list-disc ml-6 text-gray-700 mb-2 font-medium">
         <li>National Finals: 12-13 July 2025</li>
-        <li>Venue: Thyagraj stadium, New Delhi</li>
+        <li>Venue: IIT Delhi, New Delhi</li>
       </ul>
       <p className="text-gray-700 mb-2">Indian Institute of Technology Delhi (IITD) and Automation Industry Association (AIA) partnered in May 2017 to establish a center under the auspices of the Samarth Udyog initiative—a project of the Ministry of Heavy Industries (MHI). The center, known as the Foundation for Smart Manufacturing (FSM), supports the development of technologies for the effective adoption and implementation of smart manufacturing concepts.</p>
       <p className="text-gray-700 mb-2">The winning team will represent India at the prestigious international competition ABU Robocon 2025 in Mongolia, scheduled for August 24, 2025, bringing global recognition to their innovative designs.</p>
