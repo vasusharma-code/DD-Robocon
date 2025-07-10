@@ -124,17 +124,17 @@ const Stage3 = () => (
       </a>
     </div>
 
-     <div className="p-8 mt-14 bg-gray-50">
-    <h1 className="text-3xl font-bold text-red-600 text-left mb-8">
-      Registration Links
-    </h1>
-    <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLScUyHxo9yQqHMrSq1Ec3lbleQXsFuhOd4AKJSPPC-3wZ7yd8A/viewform?usp=pp_url"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition"
-      >
-       1. Participation Form
+    <div className="p-8 mt-14 bg-gray-50">
+      <h1 className="text-3xl font-bold text-red-600 text-left mb-8">
+        Registration Links
+      </h1>
+      <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScUyHxo9yQqHMrSq1Ec3lbleQXsFuhOd4AKJSPPC-3wZ7yd8A/viewform?usp=pp_url"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition"
+        >
+         1. Participation Form
       </a>
       <br/>
       <a
@@ -173,6 +173,121 @@ const Stage3 = () => (
        5. Format of Fee Receipt
       </a>
 
+    </div>
+
+    {/* Detailed Match Schedule Section */}
+    <div className="p-8 mt-14 bg-white rounded-lg shadow">
+      <h2 className="text-2xl font-bold text-blue-700 mb-4">Detailed Match Schedule</h2>
+      <p className="mb-4">
+        Please see the table below for the event schedule. For the most up-to-date and detailed match schedule, visit the&nbsp;
+        <a
+          href="https://docs.google.com/spreadsheets/d/1xgQ-aFzw06nT7s3nevdlMi9PL770V9GE/edit?usp=sharing&ouid=104266911694900133464&rtpof=true&sd=true"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline font-semibold"
+        >
+          Match Schedule Google Sheet
+        </a>.
+      </p>
+      <div className="overflow-x-auto">
+        <table className="min-w-full border border-gray-300 text-sm">
+          <thead>
+            <tr className="bg-blue-100">
+              <th className="border px-2 py-1">DAY</th>
+              <th className="border px-2 py-1">DATE</th>
+              <th className="border px-2 py-1">TIME</th>
+              <th className="border px-2 py-1">EVENTS & ACTIVITIES</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* Day 1 */}
+            <tr>
+              <td className="border px-2 py-1" rowSpan={2}>DAY 1</td>
+              <td className="border px-2 py-1" rowSpan={2}>Thursday, July 10, 2025</td>
+              <td className="border px-2 py-1">17:30 - 19:40</td>
+              <td className="border px-2 py-1">Optional Practice Sessions (99B: Academics Complex West)</td>
+            </tr>
+            <tr>
+              {/* ...empty cells for merged columns... */}
+              <td className="border px-2 py-1">20:00 - 21:00</td>
+              <td className="border px-2 py-1">Judges and Referee’s meeting with team leaders</td>
+            </tr>
+            {/* Day 2 */}
+            <tr>
+              <td className="border px-2 py-1">DAY 2</td>
+              <td className="border px-2 py-1">Friday, July 11, 2025</td>
+              <td className="border px-2 py-1">08:30 - 19:30</td>
+              <td className="border px-2 py-1">Practice Sessions (LHC Main Field)</td>
+            </tr>
+            {/* Day 3 */}
+            <tr>
+              <td className="border px-2 py-1" rowSpan={4}>DAY 3</td>
+              <td className="border px-2 py-1" rowSpan={4}>Saturday, July 12, 2025</td>
+              <td className="border px-2 py-1">08:30 - 12:00</td>
+              <td className="border px-2 py-1">League Matches</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1">12:15 - 13:00</td>
+              <td className="border px-2 py-1">INAUGURAL CEREMONY (LH 121)</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1">13:00 - 13:50</td>
+              <td className="border px-2 py-1">Lunch Break</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1">14:00 - 18:20</td>
+              <td className="border px-2 py-1">League Matches</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1"></td>
+              <td className="border px-2 py-1"></td>
+              <td className="border px-2 py-1">18:20 - 19:00</td>
+              <td className="border px-2 py-1">Results Preparation and Declaration</td>
+            </tr>
+            {/* Day 4 */}
+            <tr>
+              <td className="border px-2 py-1" rowSpan={8}>DAY 4</td>
+              <td className="border px-2 py-1" rowSpan={8}>Sunday, July 13, 2025</td>
+              <td className="border px-2 py-1">08:30 - 09:30</td>
+              <td className="border px-2 py-1">Practice Sessions</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1">09:30 - 10:40</td>
+              <td className="border px-2 py-1">Pre-Quarter Final Matches</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1">10:45 - 11:25</td>
+              <td className="border px-2 py-1">Break</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1">11:25 - 13:00</td>
+              <td className="border px-2 py-1">Quarter Final Matches</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1">13:00 - 14:30</td>
+              <td className="border px-2 py-1">Lunch Break</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1">14:30 - 15:40</td>
+              <td className="border px-2 py-1">Semi Final Matches</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1">16:00 - 16:40</td>
+              <td className="border px-2 py-1">Invite Dignitaries for Final Match</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1">16:45 - 16:55</td>
+              <td className="border px-2 py-1">Final Match</td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-1"></td>
+              <td className="border px-2 py-1"></td>
+              <td className="border px-2 py-1">17:00 - 18:10</td>
+              <td className="border px-2 py-1">CLOSING CEREMONY (LH 121)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 );
