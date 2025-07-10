@@ -8,6 +8,13 @@ import maxwellLogo from "../assets/MaxwellLogo.jpeg";
 import trsLogo from "../assets/TRSLogo.png";
 import amsLogo from "../assets/AMSLogo.png";
 import yuvaLogo from "../assets/YuvaLogo.png";
+import mctilogo from '../assets/MCITI Logo_B.png';
+import vinsyslogo from '../assets/Vinsys Logo-01-01 1.png';
+import gslogo from '../assets/GSL Logo.png';
+import zeekerslogo from '../assets/ZeekerLogo.png';
+import playlogo from '../assets/PlaytoLabs.jpeg';
+import pflogo from '../assets/pramith_logo-final 1606.jpg';
+import nicolalogo from '../assets/NICOLA LOGO BLUE png.png';
 
 const Sponsorship = () => (
   <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 py-10 px-4 md:px-0 m-2 mt-14">
@@ -189,16 +196,9 @@ const Sponsorship = () => (
       
       {/* Stall Sponsors */}
       <div className="mb-8">
-        <h3 className="text-xl font-bold text-gray-600 mb-4 text-center">Stall Sponsors</h3>
+        {/* <h3 className="text-xl font-bold text-gray-600 mb-4 text-center">Stall Sponsors</h3> */}
         <div className="flex flex-wrap justify-center gap-6 items-center">
-          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
-            <img
-              src={trsLogo}
-              alt="TRS"
-              className="object-contain"
-              style={{ height: "80px", width: "150px" }}
-            />
-          </div>
+          
         </div>
       </div>
       
@@ -218,6 +218,14 @@ const Sponsorship = () => (
             <img
               src={yuvaLogo}
               alt="Yuva Mindshare"
+              className="object-contain"
+              style={{ height: "70px", width: "120px" }}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-2">
+            <img
+              src={trsLogo}
+              alt="TRS"
               className="object-contain"
               style={{ height: "70px", width: "120px" }}
             />
@@ -243,6 +251,69 @@ const Sponsorship = () => (
               alt="FSM"
               className="object-contain"
               style={{ height: "90px", width: "160px" }}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Small Sponsors */}
+      <div className="mt-8">
+        <h3 className="text-xl font-bold text-gray-700 mb-4 text-center">Small Sponsors</h3>
+        <div className="flex flex-wrap justify-center gap-6 items-center">
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={mctilogo}
+              alt="MCITI"
+              className="object-contain"
+              style={{ height: "70px", width: "120px" }}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={vinsyslogo}
+              alt="Vinsys"
+              className="object-contain"
+              style={{ height: "70px", width: "120px" }}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={gslogo}
+              alt="GSL"
+              className="object-contain"
+              style={{ height: "70px", width: "120px" }}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={zeekerslogo}
+              alt="Zeekers"
+              className="object-contain"
+              style={{ height: "70px", width: "120px" }}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={playlogo}
+              alt="Playto Labs"
+              className="object-contain"
+              style={{ height: "70px", width: "120px" }}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={pflogo}
+              alt="Pramith"
+              className="object-contain"
+              style={{ height: "70px", width: "120px" }}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={nicolalogo}
+              alt="Nicola"
+              className="object-contain"
+              style={{ height: "70px", width: "120px" }}
             />
           </div>
         </div>
