@@ -3,11 +3,16 @@ import mathworksLogo from "../assets/MathLogo.png";
 import probusLogo from "../assets/ProbusLogo.png";
 import fsmLogo from "../assets/FSMLogo.png";
 import ihfcLogo from "../assets/IHFCLogo.png";
+import namtechLogo from "../assets/NamtechLogo.png";
+import maxwellLogo from "../assets/MaxwellLogo.jpeg";
+import trsLogo from "../assets/TRSLogo.png";
+import amsLogo from "../assets/AMSLogo.png";
+import yuvaLogo from "../assets/YuvaLogo.png";
 
 const Sponsorship = () => (
   <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 py-10 px-4 md:px-0 m-2 mt-14">
-    {/* Removed container box for a flat look */}
     <h1 className="text-4xl font-extrabold text-blue-700 mb-8 text-center tracking-tight">DD Robocon 2025 Sponsorship</h1>
+    
     {/* About Knowledge Partners */}
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-purple-700 mb-3 uppercase tracking-wide">About Knowledge Partners</h2>
@@ -57,12 +62,14 @@ const Sponsorship = () => (
         </div>
       </div>
     </section>
+    
     {/* Welcome Section */}
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-green-700 mb-3 uppercase tracking-wide">Welcome to DD-Robocon 2025</h2>
       <p className="text-gray-700 mb-2 font-semibold">Pioneering Innovation in Robotics and Engineering</p>
-      <p className="text-gray-700 mb-2">DD-Robocon (Doordarshan Robocon) is India’s premier robotics competition that brings together the brightest minds from across the nation to design, innovate, and compete in a thrilling display of engineering prowess. This year’s theme, “Robot Basketball,” challenges participants to develop robots capable of dribbling, shooting, and scoring goals in a high-energy game environment.</p>
+      <p className="text-gray-700 mb-2">DD-Robocon (Doordarshan Robocon) is India's premier robotics competition that brings together the brightest minds from across the nation to design, innovate, and compete in a thrilling display of engineering prowess. This year's theme, "Robot Basketball," challenges participants to develop robots capable of dribbling, shooting, and scoring goals in a high-energy game environment.</p>
     </section>
+    
     {/* Event Details */}
     <section className="mb-10">
       <h3 className="text-xl font-bold text-blue-600 mb-2 uppercase tracking-wide">Event Details</h3>
@@ -79,28 +86,18 @@ const Sponsorship = () => (
         <li>Media Coverage: National TV (Doordarshan) and other digital platforms and social media.</li>
       </ul>
     </section>
+    
     {/* Why Sponsor */}
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-yellow-600 mb-3 uppercase tracking-wide">Why Sponsor DD-Robocon 2025?</h2>
       <ul className="list-disc ml-6 text-gray-700 mb-2 font-medium">
         <li>Unparalleled Brand Visibility: Reach a diverse audience, including leading academic institutions, professors, researchers, students, industry experts, and media outlets.</li>
         <li>Foster Innovation: Be part of a transformative event that inspires the next generation of engineers and roboticists.</li>
-        <li>Recruit Top Talent: Engage with some of India’s brightest minds and future innovators.</li>
+        <li>Recruit Top Talent: Engage with some of India's brightest minds and future innovators.</li>
         <li>Showcase Your Commitment: Demonstrate your organization's dedication to advancing science, technology, and innovation in India.</li>
       </ul>
     </section>
-    {/* Important Links */}
-    {/* <section className="mb-10">
-      <h2 className="text-2xl font-bold text-pink-600 mb-3 uppercase tracking-wide">Important Links</h2>
-      <div className="flex flex-wrap gap-4 mb-2">
-        <a href="https://www.youtube.com/live/uhDXriSTr1E?si=DQToUbM5FRjatByp" target="_blank"
-      rel="noopener noreferrer" className="bg-blue-100 text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-200 font-semibold transition">DD Robocon 2024 Finals</a>
-        <a href="https://drive.google.com/file/d/1WY__m4tqx0t2zNBMoeLxKJmbHbSMy4M5/view?usp=drive_link" target="_blank"
-      rel="noopener noreferrer" className="bg-blue-100 text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-200 font-semibold transition">DD Robocon Newsletter 2024</a>
-        <a href="https://youtu.be/FTopsDAp2-o?si=5ihIDFDSO2JCMUIK " target="_blank"
-      rel="noopener noreferrer" className="bg-blue-100 text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-200 font-semibold transition">DD Robocon Theme 2025</a>
-      </div>
-    </section> */}
+    
     {/* Sponsorship Matrix */}
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-purple-600 mb-3 uppercase tracking-wide">Sponsorship Matrix 2025</h2>
@@ -128,7 +125,6 @@ const Sponsorship = () => (
               ["People allowed as a Sponsor in the Event", "Yes", "Yes", "Yes", "No", "Yes"],
               ["Speaking Slot at Inauguration Ceremony", "Yes", "Yes", "No", "No", "No"],
               ["Social Media Promotions Weekly", "Yes", "Yes", "Yes", "No", "No"],
-              // ["Sponsorship Amount (in Lakh Rs.)", "10.0", "5.0", "3.0", "2.0", "1.0"]
             ].map((row, idx) => (
               <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                 {row.map((cell, i) => (
@@ -140,47 +136,119 @@ const Sponsorship = () => (
         </table>
       </div>
     </section>
-    {/* Sponsors */}
+    
+    {/* Sponsors Section */}
     <section className="mb-10">
-      <h2 className="text-2xl font-bold text-green-600 mb-3 uppercase tracking-wide">DD-Robocon 2025 Sponsors</h2>
-      <div
-        className="flex flex-row gap-10 space-x-10 items-center justify-center mb-4 overflow-x-auto"
-        style={{ minHeight: "120px", whiteSpace: "nowrap" }}
-      >
-        <div className="flex items-center justify-center bg-white rounded shadow p-2">
-          <img
-            src={mathworksLogo}
-            alt="MathWorks"
-            className="object-contain"
-            style={{ height: "80px", width: "180px", display: "block" }}
-          />
+      <h2 className="text-2xl font-bold text-green-600 mb-6 uppercase tracking-wide">DD-Robocon 2025 Sponsors</h2>
+      
+      {/* Gold Sponsors */}
+      <div className="mb-8">
+        <h3 className="text-xl font-bold text-yellow-600 mb-4 text-center">Gold Sponsors</h3>
+        <div className="flex flex-wrap justify-center gap-8 items-center">
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-4">
+            <img
+              src={mathworksLogo}
+              alt="MathWorks"
+              className="object-contain"
+              style={{ height: "120px", width: "240px" }}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-4">
+            <img
+              src={namtechLogo}
+              alt="NAMTECH"
+              className="object-contain"
+              style={{ height: "120px", width: "240px" }}
+            />
+          </div>
         </div>
-        <div className="flex items-center justify-center bg-white rounded shadow p-2">
-          <img
-            src={probusLogo}
-            alt="Probus"
-            className="object-contain"
-            style={{ height: "80px", width: "180px", display: "block" }}
-          />
+      </div>
+      
+      {/* Bronze Sponsors */}
+      <div className="mb-8">
+        <h3 className="text-xl font-bold text-amber-700 mb-4 text-center">Bronze Sponsors</h3>
+        <div className="flex flex-wrap justify-center gap-6 items-center">
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={probusLogo}
+              alt="Probus"
+              className="object-contain"
+              style={{ height: "100px", width: "180px" }}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={maxwellLogo}
+              alt="Maxwell"
+              className="object-contain"
+              style={{ height: "100px", width: "180px" }}
+            />
+          </div>
         </div>
-        <div className="flex items-center justify-center bg-white rounded shadow p-2">
-          <img
-            src={fsmLogo}
-            alt="FSM"
-            className="object-contain"
-            style={{ height: "80px", width: "180px", display: "block" }}
-          />
+      </div>
+      
+      {/* Stall Sponsors */}
+      <div className="mb-8">
+        <h3 className="text-xl font-bold text-gray-600 mb-4 text-center">Stall Sponsors</h3>
+        <div className="flex flex-wrap justify-center gap-6 items-center">
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={trsLogo}
+              alt="TRS"
+              className="object-contain"
+              style={{ height: "80px", width: "150px" }}
+            />
+          </div>
         </div>
-        <div className="flex items-center justify-center bg-white rounded shadow p-2">
-          <img
-            src={ihfcLogo}
-            alt="IHFC"
-            className="object-contain"
-            style={{ height: "80px", width: "180px", display: "block" }}
-          />
+      </div>
+      
+      {/* Other Sponsors */}
+      <div className="mb-8">
+        <h3 className="text-xl font-bold text-blue-600 mb-4 text-center">Other Sponsors</h3>
+        <div className="flex flex-wrap justify-center gap-4 items-center">
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-2">
+            <img
+              src={amsLogo}
+              alt="AMS Pvt. Ltd"
+              className="object-contain"
+              style={{ height: "70px", width: "120px" }}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-2">
+            <img
+              src={yuvaLogo}
+              alt="Yuva Mindshare"
+              className="object-contain"
+              style={{ height: "70px", width: "120px" }}
+            />
+          </div>
+        </div>
+      </div>
+      
+      {/* Knowledge Partners */}
+      <div>
+        <h3 className="text-xl font-bold text-purple-600 mb-4 text-center">Knowledge Partners</h3>
+        <div className="flex flex-wrap justify-center gap-6 items-center">
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={ihfcLogo}
+              alt="IHFC"
+              className="object-contain"
+              style={{ height: "90px", width: "160px" }}
+            />
+          </div>
+          <div className="flex items-center justify-center bg-white rounded-lg shadow p-3">
+            <img
+              src={fsmLogo}
+              alt="FSM"
+              className="object-contain"
+              style={{ height: "90px", width: "160px" }}
+            />
+          </div>
         </div>
       </div>
     </section>
+    
     {/* Contact Us */}
     <section>
       <h2 className="text-2xl font-bold text-blue-700 mb-3 uppercase tracking-wide">Contact Us</h2>
